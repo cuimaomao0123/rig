@@ -1,0 +1,12 @@
+{
+  defaultSource: {
+    type: 'git',
+    registry: 'git@git.rys.cn:f2e-common/',
+  },
+  dependencies: [
+    {
+//      'r-basic': '1.0.0',
+      'r-basic': '/Users/rys-32/Documents/1-Work/1-RYS/'
+    }
+  ]
+}
