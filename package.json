@@ -11,8 +11,9 @@
   },
   "scripts": {
     "init": "node ./lib/rig/index.js init",
-    "install": "node /lib/rig/index.js install",
-    "publish": "node ./lib/rig/index.js publish"
+    "i": "node ./lib/rig/index.js install",
+    "p": "node ./lib/rig/index.js publish",
+    "publish": "npm publish --registry=https://registry.npmjs.org"
   },
   "dependencies": {
     "commander": "6.1.0",
