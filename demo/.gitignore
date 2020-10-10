@@ -1,0 +1,5 @@
+
+rigs/*
+rigs_dev/*
+!rigs/.gitkeep
+!rigs_dev/.gitkeep

@@ -1,0 +1,10 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "dependencies": {},
+  "private": false,
+  "workspace": [
+    "rigs/*",
+    "rigs_dev/*"
+  ]
+}
