@@ -1,12 +1,11 @@
 # rig
-
-需要支持的命令：
+## TODO：
 ### rig init 
-1. 创建rigfile.json5
-2. 创建一个rigs文件夹
-3. 创建一个dev_rigs文件夹
-4. 补充yarn workspace 配置
-5. 补充private:true
+1. ~~创建rigfile.json5~~
+2. ~~创建一个rigs文件夹~~
+3. ~~创建一个dev_rigs文件夹~~
+4. ~~补充yarn workspace 配置~~
+5. ~~补充private:true~~
 
 ### rig install(rig i)
 1. 将文件全部克隆到rigs下
