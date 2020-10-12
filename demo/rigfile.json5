@@ -10,4 +10,5 @@
   name: 'r-foundation',
   source: 'git@git.rys.cn:f2e-common/r-foundation.git',
   version: '1.0.0',
+  dev: true
 }]

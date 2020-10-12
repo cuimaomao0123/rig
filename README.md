@@ -1,7 +1,7 @@
 # rig
 ## TODO：
 ### rig init 
-1. ~~创建rigfile.json5~~
+1. ~~创建package.rig.json5.json5~~
 2. ~~创建一个rigs文件夹~~
 3. ~~创建一个dev_rigs文件夹~~
 4. ~~补充yarn workspace 配置~~
