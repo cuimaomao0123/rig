@@ -1,8 +1,20 @@
 {
   "name": "demo",
   "version": "1.0.0",
-  "dependencies": {},
-  "private": false,
+  "dependencies": {
+    "axios": "^0.20.0",
+    "r-networking": "git+ssh://git@git.rys.cn:f2e-common/r-networking.git#1.0.0"
+  },
+  "private": true,
+  "workspaces": [
+    "rigs/*",
+    "rigs_dev/*"
+  ],
+  "scripts": {
+    "preinstall": "node test.js && rig preinstall",
+    "postinstall": "rig postinstall"
+  },
+  "info": "test",
   "workspace": [
     "rigs/*",
     "rigs_dev/*"

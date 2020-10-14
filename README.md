@@ -1,28 +1,90 @@
 # rig
-## TODO：
-### rig init 
-1. ~~创建package.rig.json5.json5~~
-2. ~~创建一个rigs文件夹~~
-3. ~~创建一个dev_rigs文件夹~~
-4. ~~补充yarn workspace 配置~~
-5. ~~补充private:true~~
-6. 测试rig init
 
-### rig install(rig i)
-1. 将文件全部克隆到rigs下
-2. 修改package.json，补充rigs下的依赖
-3. 轮流执行npm link操作
+- [Getting Started](#getting-started)
+- [How It Works](#how-it-works)
+- [Troubleshooting](#troubleshooting)
+- Commands
+  - [`rig init`](./commands/publish#readme)
+  - [`rig install`](./commands/publish#readme)
+  - [`rig preinstall`](./commands/publish#readme) **Using by npm's preinstall.No need to run this manually.**
+  - [`rig postinstall`](./commands/publish#readme) **Using by npm's postinstall.No need to run this manually.**
+- [Concepts](#concepts)
+- [Lerna.json](#lernajson)
+- [Global Flags](./core/global-options)
+- [Filter Flags](./core/filter-options)
 
-### rig publish(rig p)
-1. 打tag
-2. push --tags
+##Getting started
+Should install yarn first.Rig is using yarn workspace to do hoisting.
 
-软连接一直无效,要用绝对路径！
-package.json里要用git地址
-取消rigs_dev
-只保留rig
-rig里存放需要开发的模块
+**init**
 
+```shell script
+npm i -g yarn 
+yarn global add rigjs
+rig init
+```
+**config package.rig.json5**
+```json5
+//dev is false by default
+[
+//  {
+//    name: 'r-a',//module's name
+//    source: 'git@git.domain.com:common/r-a.git',//module's source
+//    version: '1.0.0',//Notice:this used as tag.module's version ,
+//  },
+  {
+    name: 'r-b',
+    source: 'git@git.domain.com:common/r-b.git',
+    version: '1.0.0',
+  },
+  {
+    name: 'r-c',
+    source: 'git@git.domain.com:common/r-c.git',
+    version: '1.0.0',
+    dev: true
+  }
+]
+```
+result:r-b will be installed in node_modules.
+r-c will be clone to 
+## How it works
+Rig is inspired by cocoapods.
+Not like those popular monorepos solutions,rig is a tool for organizing multi repos.
+So rig create a file named "package.rig.json5".
+Data in "package.rig.json5" looks like this:
+```json5
+//dev is false by default
+//dev 默认为false
+[
+//  {
+//    name: 'r-a',//module's name
+//    source: 'git@git.domain.com:common/r-a.git',//module's source
+//    version: '1.0.0',//Notice:this used as tag.module's version ,
+//  },
+  {
+    name: 'r-b',
+    source: 'git@git.domain.com:common/r-b.git',
+    version: '1.0.0',
+  },
+  {
+    name: 'r-c',
+    source: 'git@git.domain.com:common/r-c.git',
+    version: '1.0.0',
+    dev: true
+  }
+]
+```
+package.rig.json5 has an array of modules.
+
+So rig create a folder named "rigs".
+It contains modules that you want.
+
+**Main Features**
+
+1. rig is created for modular architecture.
+2. rig is an organizer for multi repos.
+3. you can develop and test your module within your project.Just set dev to true.
+4. 
 
 
 
