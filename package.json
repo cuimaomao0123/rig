@@ -1,6 +1,6 @@
 {
   "name": "rigjs",
-  "version": "0.9.21",
+  "version": "0.9.22",
   "description": "A multirepos dev tool based on yarn",
   "main": "index.js",
   "repository": "https://github.com/FlashHand/rig",
