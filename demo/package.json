@@ -14,9 +14,5 @@
     "preinstall": "node test.js && rig preinstall",
     "postinstall": "rig postinstall"
   },
-  "info": "test",
-  "workspace": [
-    "rigs/*",
-    "rigs_dev/*"
-  ]
+  "info": "test"
 }

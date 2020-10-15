@@ -2,27 +2,23 @@
 
 - [Getting Started](#getting-started)
 - [How It Works](#how-it-works)
-- [Troubleshooting](#troubleshooting)
 - Commands
   - [`rig init`](./commands/publish#readme)
   - [`rig install`](./commands/publish#readme)
   - [`rig preinstall`](./commands/publish#readme) **Using by npm's preinstall.No need to run this manually.**
   - [`rig postinstall`](./commands/publish#readme) **Using by npm's postinstall.No need to run this manually.**
-- [Concepts](#concepts)
-- [Lerna.json](#lernajson)
-- [Global Flags](./core/global-options)
-- [Filter Flags](./core/filter-options)
 
 ##Getting started
 Should install yarn first.Rig is using yarn workspace to do hoisting.
 
-**init**
+**init rig**
 
 ```shell script
 npm i -g yarn 
 yarn global add rigjs
 rig init
 ```
+package.rig.json5 will be added to your project's root.
 **config package.rig.json5**
 ```json5
 //dev is false by default
@@ -45,13 +41,26 @@ rig init
   }
 ]
 ```
-result:r-b will be installed in node_modules.
-r-c will be clone to 
+**Run:**
+```shell script
+rig install
+```
+OR
+```shell script
+yarn install
+```
+**Result:**
+r-b will be installed in node_modules.
+
+r-c will be cloned to rigs/
 ## How it works
+
+####package.rig.json5
+
 Rig is inspired by cocoapods.
-Not like those popular monorepos solutions,rig is a tool for organizing multi repos.
+Not like those popular monorepo solutions,rig is a tool for organizing multi repos.
 So rig create a file named "package.rig.json5".
-Data in "package.rig.json5" looks like this:
+Data in "package.rig.json5" can look like this:
 ```json5
 //dev is false by default
 //dev 默认为false
@@ -77,14 +86,43 @@ Data in "package.rig.json5" looks like this:
 package.rig.json5 has an array of modules.
 
 So rig create a folder named "rigs".
-It contains modules that you want.
 
-**Main Features**
+When dev is true,the module will be cloned in rigs/**(using master branch)**.
 
-1. rig is created for modular architecture.
-2. rig is an organizer for multi repos.
-3. you can develop and test your module within your project.Just set dev to true.
-4. 
+And it gets automatically linked in node_modules.
+
+####How rig modifies package.json
+
+```javascript
+//Rig will insert these to package.json
+//Rig won't cover your preinstall or postinstall's  settings.Scripts and workspaces will be appended.
+let inserted = {
+      private: true,
+      workspaces: [
+        "rigs/*",
+        "rigs_dev/*"
+      ],
+      scripts:{
+        preinstall:"rig preinstall",
+        postinstall:"rig postinstall",
+      }
+    }
+```
+
+
+####Main Features
+
+1. Created for modular architecture.
+2. An organizer for multi repos.
+3. You can develop and test your module within your project.Just set **dev** to true.
+4. Using yarn workspace.
+5. Automatically link your developing modules in rigs/.
+
+**How to remove your modules**
+
+Remove your modules from both package.json and package.rig.json5 then run **rig install** or **yarn install**.
+
+
 
 
 
