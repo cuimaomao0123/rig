@@ -1,7 +1,7 @@
 # rig
 
-- [Getting Started](#getting-started)
-- [How It Works](#how-it-works)
+- [快速开始](#快速开始)
+- [功能简介](#how-it-works)
 - Commands
   - [rig init](#rig-init)
   - [`rig install`](./commands/publish#readme)

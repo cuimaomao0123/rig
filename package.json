@@ -11,10 +11,11 @@
   },
   "scripts": {
     "init": "cd demo && node ../lib/rig/index.js init",
-    "i": "cd demo && node ../lib/rig/index.js install",
+    "i": "cd demo && node ../lib/rig/index.js check && node ../lib/rig/index.js install",
     "p": "cd demo && node ../lib/rig/index.js publish",
     "c": "cd demo && node ../lib/rig/index.js check",
-    "t": "cd demo && node ../lib/rig/index.js tag"
+    "t": "cd demo && node ../lib/rig/index.js tag",
+    "deliver": "npm publish --registry=https://registry.npmjs.org"
   },
   "dependencies": {
     "chalk": "^4.1.0",
