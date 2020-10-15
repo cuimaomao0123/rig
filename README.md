@@ -3,7 +3,7 @@
 - [Getting Started](#getting-started)
 - [How It Works](#how-it-works)
 - Commands
-  - [`rig init`](./commands/publish#readme)
+  - [rig init](#rig-init)
   - [`rig install`](./commands/publish#readme)
   - [`rig preinstall`](./commands/publish#readme) **Using by npm's preinstall.No need to run this manually.**
   - [`rig postinstall`](./commands/publish#readme) **Using by npm's postinstall.No need to run this manually.**
@@ -111,7 +111,6 @@ let inserted = {
     }
 ```
 
-
 ####Main Features
 
 1. Created for modular architecture.
@@ -127,6 +126,24 @@ Remove your modules from both package.json and package.rig.json5 then run **rig 
 //TODO:
 rig check //if has dev:true then end shell
 rig tag //using package.json version
+
+##Command
+
+###rig init
+ 1. create a "package.rig.json5" file
+ 2. insert config to package.json
+ 3. create "rigs" folder
+ 4. modifiy .gitignore
+ 
+###rig install
+equals to "yarn install"
+
+###rig check
+If a module's dev status is true in "package.rig.json5",it will not pass!
+
+Make sure you are not using developing modules for production.
+###rig tag
+Using version in package.json to tag.
 
 
 
