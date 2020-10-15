@@ -19,7 +19,8 @@ yarn global add rigjs
 rig init
 ```
 package.rig.json5 will be added to your project's root.
-**config package.rig.json5**
+
+**configuring package.rig.json5**
 ```json5
 //dev is false by default
 [
