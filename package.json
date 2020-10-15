@@ -12,7 +12,9 @@
   "scripts": {
     "init": "cd demo && node ../lib/rig/index.js init",
     "i": "cd demo && node ../lib/rig/index.js install",
-    "p": "cd demo && node ../lib/rig/index.js publish"
+    "p": "cd demo && node ../lib/rig/index.js publish",
+    "c": "cd demo && node ../lib/rig/index.js check",
+    "t": "cd demo && node ../lib/rig/index.js tag"
   },
   "dependencies": {
     "chalk": "^4.1.0",

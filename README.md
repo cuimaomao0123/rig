@@ -124,7 +124,9 @@ let inserted = {
 
 Remove your modules from both package.json and package.rig.json5 then run **rig install** or **yarn install**.
 
-
+//TODO:
+rig check //if has dev:true then end shell
+rig tag //using package.json version
 
 
 
