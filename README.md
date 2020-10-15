@@ -11,7 +11,7 @@
 ##Getting started
 Should install yarn first.Rig is using yarn workspace to do hoisting.
 
-**init rig**
+**1.init rig**
 
 ```shell script
 npm i -g yarn 
@@ -20,7 +20,7 @@ rig init
 ```
 package.rig.json5 will be added to your project's root.
 
-**configuring package.rig.json5**
+**2.configuring package.rig.json5**
 ```json5
 //dev is false by default
 [
@@ -42,7 +42,7 @@ package.rig.json5 will be added to your project's root.
   }
 ]
 ```
-**Run:**
+**3.run install:**
 ```shell script
 rig install
 ```
@@ -51,6 +51,7 @@ OR
 yarn install
 ```
 **Result:**
+
 r-b will be installed in node_modules.
 
 r-c will be cloned to rigs/
