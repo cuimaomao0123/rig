@@ -2,7 +2,10 @@
   "name": "demo",
   "version": "1.0.0",
   "dependencies": {
-    "r-networking": "git+ssh://git@git.rys.cn:f2e-common/r-networking.git#1.0.0"
+    "r-networking": "git+ssh://git@git.rys.cn:f2e-common/r-networking.git#1.0.1",
+    "r-basic": "git+ssh://git@git.rys.cn:f2e-common/r-basic.git#1.0.2",
+    "r-foundation": "git+ssh://git@git.rys.cn:f2e-common/r-foundation.git#1.0.1",
+    "r-helper": "git+ssh://git@git.rys.cn:f2e-common/r-helper.git#1.0.2"
   },
   "private": true,
   "workspaces": [
@@ -10,8 +13,8 @@
     "rigs_dev/*"
   ],
   "scripts": {
-    "preinstall": "node test.js && rig preinstall",
-    "postinstall": "rig postinstall"
+    "preinstall": "node test.js && rig preinstall && rig preinstall",
+    "postinstall": "rig postinstall && rig postinstall"
   },
   "info": "test"
 }

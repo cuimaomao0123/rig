@@ -1,20 +1,22 @@
-//dev is false by default
-//dev 默认为false
 [
-//  {
-//    name: 'r-helper',
-//    source: 'git@git.rys.cn:f2e-common/r-helper.git',
-//    version: '1.0.0',
-//  },
   {
-    name: 'r-networking',
-    source: 'git@git.rys.cn:f2e-common/r-networking.git',
-    version: '1.0.0',
+    name: "r-basic",
+    source: "git@git.rys.cn:f2e-common/r-basic.git",
+    version: "1.0.2"
   },
   {
-    name: 'r-foundation',
-    source: 'git@git.rys.cn:f2e-common/r-foundation.git',
-    version: '1.0.0',
-    dev: true
+    name: "r-foundation",
+    source: "git@git.rys.cn:f2e-common/r-foundation.git",
+    version: "1.0.1"
+  },
+  {
+    name: "r-networking",
+    source: "git@git.rys.cn:f2e-common/r-networking.git",
+    version: "1.0.1"
+  },
+  {
+    name: "r-helper",
+    source: "git@git.rys.cn:f2e-common/r-helper.git",
+    version: "1.0.2"
   }
 ]
