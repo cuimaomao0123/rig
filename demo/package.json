@@ -2,7 +2,6 @@
   "name": "demo",
   "version": "1.0.0",
   "dependencies": {
-    "axios": "^0.20.0",
     "r-networking": "git+ssh://git@git.rys.cn:f2e-common/r-networking.git#1.0.0"
   },
   "private": true,

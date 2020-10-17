@@ -1,6 +1,6 @@
 {
   "name": "rigjs",
-  "version": "0.9.28",
+  "version": "0.9.29",
   "description": "A multirepos dev tool based on yarn",
   "main": "index.js",
   "repository": "https://github.com/FlashHand/rig",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "init": "cd demo && node ../lib/rig/index.js init",
-    "i": "cd demo && node ../lib/rig/index.js check && node ../lib/rig/index.js install",
+    "i": "cd demo && node ../lib/rig/index.js install",
     "p": "cd demo && node ../lib/rig/index.js publish",
     "c": "cd demo && node ../lib/rig/index.js check",
     "t": "cd demo && node ../lib/rig/index.js tag",
