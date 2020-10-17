@@ -13,8 +13,8 @@
     "rigs_dev/*"
   ],
   "scripts": {
-    "preinstall": "node test.js && rig preinstall && rig preinstall",
-    "postinstall": "rig postinstall && rig postinstall"
+    "preinstall": "node test.js && rig preinstall",
+    "postinstall": "rig postinstall"
   },
   "info": "test"
 }
