@@ -1,7 +1,21 @@
 {
   "name": "rigjs",
-  "version": "1.0.0",
-  "description": "A multi-repos dev tool based on yarn",
+  "version": "1.0.2",
+  "description": "A multi-repos dev tool based on yarn and git.Rig is inspired by cocoapods. Not like those monorepo solutions,rig is a tool for organizing multi-repos.",
+  "keywords": [
+    "modular",
+    "lerna",
+    "monorepo",
+    "multirepos",
+    "multirepo",
+    "multi-repos",
+    "multi-repo",
+    "cocoapods",
+    "link",
+    "npm link",
+    "workspaces",
+    "workspace"
+  ],
   "main": "index.js",
   "repository": "https://github.com/FlashHand/rig",
   "author": "ralwayne",
