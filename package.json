@@ -10,7 +10,7 @@
     "cocoapods",
     "symlink",
     "npm link",
-    "workspaces",
+    "workspaces"
   ],
   "main": "index.js",
   "repository": "https://github.com/FlashHand/rig",
