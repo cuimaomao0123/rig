@@ -3,10 +3,11 @@
 - [Getting Started](#getting-started)
 - [How It Works](#how-it-works)
 - Commands
-  - [rig init](#rig-init)
-  - [`rig install`](./commands/publish#readme)
-  - [`rig preinstall`](./commands/publish#readme) **Using by npm's preinstall.No need to run this manually.**
-  - [`rig postinstall`](./commands/publish#readme) **Using by npm's postinstall.No need to run this manually.**
+  - [`rig init`](#rig-init)
+  - [`rig install`](#rig-install)
+  - [`rig check`](#rig-check)
+  - [`rig tag`](#rig-tag)
+
 
 ##Getting started
 Should install yarn first.Rig is using yarn workspace to do hoisting.
@@ -133,15 +134,16 @@ rig tag //using package.json version
  1. create a "package.rig.json5" file
  2. insert config to package.json
  3. create "rigs" folder
- 4. modifiy .gitignore
+ 4. modify .gitignore
  
 ###rig install
 equals to "yarn install"
 
 ###rig check
-If a module's dev status is true in "package.rig.json5",it will not pass!
+If a module's dev status is true in "package.rig.json5",the config will not be passed!
 
 Make sure you are not using developing modules for production.
+
 ###rig tag
 Using version in package.json to tag.
 
