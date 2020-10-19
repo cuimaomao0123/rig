@@ -9,7 +9,7 @@
   - [`rig tag`](#rig-tag)
 
 
-##Getting started
+## Getting started
 Should install yarn first.Rig is using yarn workspace to do hoisting.
 
 **1.init rig**
@@ -58,7 +58,7 @@ r-b will be installed in node_modules.
 r-c will be cloned to rigs/
 ## How it works
 
-####package.rig.json5
+#### package.rig.json5
 
 Rig is inspired by cocoapods.
 Not like those popular monorepo solutions,rig is a tool for organizing multi repos.
@@ -94,7 +94,7 @@ When dev is true,the module will be cloned in rigs/**(using master branch)**.
 
 And it gets automatically linked in node_modules.
 
-####How rig modifies package.json
+#### How rig modifies package.json
 
 ```javascript
 //Rig will insert these to package.json
@@ -112,7 +112,7 @@ let inserted = {
     }
 ```
 
-####Main Features
+#### Main Features
 
 1. Created for modular architecture.
 2. An organizer for multi repos.
@@ -128,23 +128,23 @@ Remove your modules from both package.json and package.rig.json5 then run **rig 
 rig check //if has dev:true then end shell
 rig tag //using package.json version
 
-##Command
+## Command
 
-###rig init
+### rig init
  1. create a "package.rig.json5" file
  2. insert config to package.json
  3. create "rigs" folder
  4. modify .gitignore
  
-###rig install
+### rig install
 equals to "yarn install"
 
-###rig check
+### rig check
 If a module's dev status is true in "package.rig.json5",the config will not be passed!
 
 Make sure you are not using developing modules for production.
 
-###rig tag
+### rig tag
 Using version in package.json to tag.
 
 
