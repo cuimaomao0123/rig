@@ -56,6 +56,11 @@ yarn install
 r-b will be installed in node_modules.
 
 r-c will be cloned to rigs/
+
+"rig install" equals to "yarn install".
+Because all functions are in preinstall and postinstall. 
+
+
 ## How it works
 
 #### package.rig.json5

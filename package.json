@@ -1,6 +1,6 @@
 {
   "name": "rigjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A multi-repos dev tool based on yarn and git.Rig is inspired by cocoapods. Not like those monorepo solutions,rig is a tool for organizing multi-repos.",
   "keywords": [
     "modular",
@@ -23,7 +23,9 @@
     "init": "cd demo && node ../lib/rig/index.js init",
     "i": "cd demo && node ../lib/rig/index.js install",
     "p": "cd demo && node ../lib/rig/index.js publish",
-    "c": "cd demo && node ../lib/rig/index.js check",
+    "prei": "cd demo && node ../lib/rig/index.js preinstall",
+    "posti": "cd demo && node ../lib/rig/index.js postinstall",
+    "c": "d demo && node ../lib/rig/index.js check",
     "t": "cd demo && node ../lib/rig/index.js tag",
     "deliver": "npm publish --registry=https://registry.npmjs.org"
   },
