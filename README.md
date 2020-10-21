@@ -1,5 +1,5 @@
 # rig
-## [中文文档](./#readme)
+## [中文文档](./#readme_cn)
 - [Getting Started](#getting-started)
 - [How It Works](#how-it-works)
 - Commands
