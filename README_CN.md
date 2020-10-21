@@ -44,6 +44,7 @@ package.rig.json5 会被添加到工程根目录
 ]
 ```
 version等于tag
+
 **3.run install:**
 ```shell script
 rig install
@@ -52,7 +53,7 @@ OR
 ```shell script
 yarn install
 ```
-**Result:**
+**Results:**
 
 r-b 会被安装到node_modules中
 
@@ -119,7 +120,7 @@ let inserted = {
 
 #### 主要功能
 
-1. 为方便模块话开发而服务，
+1. 更方便的进行模块化开发，
 2. 自动集成多个开发库
 3. 只要将dev设为true,就可以在项目中开发调试任何模块。
 4. 采用yarn的workspaces,避免依赖冗余.
