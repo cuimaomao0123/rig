@@ -11,22 +11,3 @@ lodash@^4.17.19:
   version "4.17.20"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.20.tgz?cache=0&sync_timestamp=1597336082988&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha1-tEqbYpe8tpjxxRo1RaKzs2jVnFI=
-
-"r-basic@git+ssh://git@git.rys.cn:f2e-common/r-basic.git#1.0.2":
-  version "1.0.0"
-  resolved "git+ssh://git@git.rys.cn:f2e-common/r-basic.git#9d2ff44e4a98f6cbf0f3c20988f6f08ab176f276"
-
-"r-foundation@git+ssh://git@git.rys.cn:f2e-common/r-foundation.git#1.0.1":
-  version "1.0.0"
-  resolved "git+ssh://git@git.rys.cn:f2e-common/r-foundation.git#ea22c1bcb7b84b2e5ea52683c36aaad73ef26100"
-  dependencies:
-    dayjs "^1.8.30"
-    lodash "^4.17.19"
-
-"r-helper@git+ssh://git@git.rys.cn:f2e-common/r-helper.git#1.0.1":
-  version "1.0.0"
-  resolved "git+ssh://git@git.rys.cn:f2e-common/r-helper.git#45c570c866c2a1c6a3728071ce056e187ae33d4c"
-
-"r-networking@git+ssh://git@git.rys.cn:f2e-common/r-networking.git#1.0.1":
-  version "1.0.0"
-  resolved "git+ssh://git@git.rys.cn:f2e-common/r-networking.git#f799182ec7fb3014ef497986edba482ae7ed6511"
