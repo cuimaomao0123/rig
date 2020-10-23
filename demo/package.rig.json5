@@ -18,5 +18,6 @@
     name: "r-helper",
     source: "git@git.rys.cn:f2e-common/r-helper.git",
     version: "1.0.1",
+    dev: true
   }
 ]
