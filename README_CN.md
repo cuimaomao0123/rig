@@ -147,4 +147,5 @@ let inserted = {
 使用package.json中的version打tag
 //TODO：自动检查是否存在未提交代码。
 
-
+###rig info
+查看模块配置信息
