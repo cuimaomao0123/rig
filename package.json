@@ -26,7 +26,7 @@
     "prei": "cd demo && node ../lib/rig/index.js preinstall",
     "posti": "cd demo && node ../lib/rig/index.js postinstall",
     "c": "d demo && node ../lib/rig/index.js check",
-    "t": "cd demo && node ../lib/rig/index.js tag",
+    "t": "node lib/rig/index.js tag",
     "deliver": "npm publish --registry=https://registry.npmjs.org"
   },
   "dependencies": {
