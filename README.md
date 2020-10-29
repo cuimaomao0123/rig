@@ -155,6 +155,8 @@ Using version in package.json to tag.
 ## TODO
 rig install不覆盖rigs下的文件
 es5兼容文档
+不能删除rigs下的文件
+
 
 
 
