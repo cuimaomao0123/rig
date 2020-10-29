@@ -152,5 +152,9 @@ Make sure you are not using developing modules for production.
 ### rig tag
 Using version in package.json to tag.
 
+## TODO
+rig install不覆盖rigs下的文件
+es5兼容文档
+
 
 

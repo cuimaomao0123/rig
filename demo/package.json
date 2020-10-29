@@ -2,6 +2,7 @@
   "name": "demo",
   "version": "1.0.0",
   "dependencies": {
+    "moment": "^2.29.1",
     "r-foundation": "git+ssh://git@git.rys.cn:f2e-common/r-foundation.git#1.0.1",
     "undefined": "git+ssh://git@git.rys.cn:f2e-common/r-foundation.git#1.0.1"
   },
