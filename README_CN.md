@@ -118,8 +118,8 @@ let inserted = {
     }
 ```
 rig机制概括起来就是分库开发，整体构建。
-![develop](https://github.com/FlashHand/rig/blob/main/develop.png)
-![production](https://github.com/FlashHand/rig/blob/main/develop.png)
+![develop](https://github.com/FlashHand/rig/raw/main/develop.png)
+![production](https://github.com/FlashHand/rig/raw/main/production.png)
 #### 主要功能
 
 1. 更方便的进行模块化开发，
