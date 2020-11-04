@@ -13,5 +13,8 @@
     "preinstall": "rig preinstall",
     "postinstall": "rig postinstall"
   },
-  "info": "test"
+  "info": "test",
+  "devDependencies": {
+    "json5": "2.1.3"
+  }
 }
