@@ -26,6 +26,7 @@
     "prei": "cd demo && node ../lib/rig/index.js preinstall",
     "posti": "cd demo && node ../lib/rig/index.js postinstall",
     "c": "d demo && node ../lib/rig/index.js check",
+    "envmake": "cd demo && node ../lib/rig/index.js env fp_test",
     "t": "node lib/rig/index.js tag",
     "deliver": "npm publish --registry=https://registry.npmjs.org"
   },
