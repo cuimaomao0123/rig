@@ -1,2 +1,2 @@
-#!/usr/bin/envmake node
+#!/usr/bin/env node
 require('../lib/rig');
