@@ -152,6 +152,12 @@ Make sure you are not using developing modules for production.
 ### rig tag
 Using version in package.json to tag.
 
+### rig --env fp_test
+This command automatically reads the file named "env.rig.json5" in the root directory,
+  and looks for the environment variable configuration in mode "fp_test",
+  and eventually generates a file for you with a fixed name of ".env.rig".
+  Warning: Like "fp_test" is a mandatory variable.
+
 ## TODO
 rig install不覆盖rigs下的文件
 es5兼容文档
